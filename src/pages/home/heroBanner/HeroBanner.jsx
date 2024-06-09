@@ -23,6 +23,11 @@ const HeroBanner = () => {
 
 
     }
+    const handleButtonClick = () => {
+        if (query.length > 0) {
+            navigate(`/search/${query}`);
+        }
+    }
 
     useEffect(()=>{
         const bg =url.backdrop + data?.results?.[Math.floor(Math.random()*20)]?.backdrop_path;
@@ -52,7 +57,7 @@ const HeroBanner = () => {
                     onKeyUp={searchQueryhandler}
                     onChange={(e)=>setQuery(e.target.value)}
                     />
-                    <button>Search</button>
+                    <button onClick={handleButtonClick} >Search</button>
                 </div>
             </div>
         </ContentWrapper>

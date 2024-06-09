@@ -83,6 +83,8 @@ const Header = () => {
             setMobileMenu(false);
     }
 
+
+
     return (
        <header className={`header ${mobileMenu ? "mobileView" : ""} ${show} `}>
         <ContentWrapper>
