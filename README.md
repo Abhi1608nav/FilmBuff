@@ -5,7 +5,7 @@ FilmBuff is a comprehensive movie browsing application designed to offer users a
 ## Features
 
 ### Home Page
-
+![Class Diagram]()
 The home page is divided into three main sections:
 
 #### Popular Section
